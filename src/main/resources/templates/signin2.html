@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In 2</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 20px;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .toolbar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 16px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .back-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-button img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .toolbar-title {
+            flex: 1;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .section {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        .label {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        .helper-text {
+            font-size: 16px;
+            color: #979797;
+        }
+
+        .divider {
+            width: 100%;
+            height: 7px;
+            background-color: #f0f0f0;
+            margin: 16px 0;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .radio-label {
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .radio-label input {
+            margin-right: 10px;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="toolbar">
+        <button class="back-button">
+            <img src="/path/to/ic_arrow_14.png" alt="Back" />
+        </button>
+        <h1 class="toolbar-title">title</h1>
+    </div>
+
+    <div class="section">
+        <label class="label">이름</label>
+        <input type="text" class="input" placeholder="이름을 입력해주세요" />
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <label class="label">연락처</label>
+        <input type="text" class="input" placeholder="연락처을 입력해주세요" />
+        <small class="helper-text">예) 010-0000-0000</small>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <label class="label">직업</label>
+        <div class="radio-group">
+            <label class="radio-label">
+                <input type="radio" name="job" value="peasant" />
+                농부
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="job" value="etc" />
+                기타
+            </label>
+            <input type="text" class="input" placeholder="직업을 입력 해 주세요." />
+        </div>
+    </div>
+
+    <button class="submit-button">가입하기</button>
+</div>
+</body>
+</html>

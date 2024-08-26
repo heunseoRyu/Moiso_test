@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 16px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .backButton {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .backIcon {
+            width: 24px;
+            height: 24px;
+            transform: rotate(180deg);
+        }
+
+        .toolbarTitle {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .section {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sectionTitle {
+            font-family: 'Pretendard SemiBold', sans-serif;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .textInput {
+            font-family: 'Pretendard Medium', sans-serif;
+            font-size: 20px;
+            color: #979797;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .passwordHint {
+            font-family: 'Pretendard Regular', sans-serif;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .separator {
+            height: 7px;
+            background-color: gray;
+            margin: 16px 0;
+        }
+
+        .loginButton {
+            width: 100%;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 20px;
+            font-family: 'Pretendard Medium', sans-serif;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .signUpText {
+            display: block;
+            text-align: center;
+            margin-top: 16px;
+            font-size: 20px;
+            font-family: 'Pretendard Medium', sans-serif;
+            color: #979797;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <button class="backButton">
+            <img src="/assets/ic_arrow_14.png" class="backIcon" alt="Back" />
+        </button>
+        <span class="toolbarTitle">title</span>
+    </div>
+
+    <!-- Email Section -->
+    <div class="section">
+        <label class="sectionTitle">이메일</label>
+        <input
+                type="text"
+                class="textInput"
+                placeholder="이메일을 입력해주세요"
+        />
+    </div>
+
+    <div class="separator"></div>
+
+    <!-- Password Section -->
+    <div class="section">
+        <label class="sectionTitle">비밀번호</label>
+        <span class="passwordHint">n자이상 대소문자를섞어서 써주세요.</span>
+        <input
+                type="password"
+                class="textInput"
+                placeholder="비밀번호을 입력해주세요"
+        />
+    </div>
+
+    <div class="separator"></div>
+
+    <!-- Login Button -->
+    <button class="loginButton">
+        다음으로
+    </button>
+
+    <!-- Sign Up Text -->
+    <span class="signUpText">회원가입</span>
+</div>
+</body>
+</html>
